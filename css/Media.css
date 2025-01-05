@@ -48,6 +48,16 @@
     }
 }
 
+@media (max-width: 1300px) and (orientation: landscape) 
+{
+    header 
+    {
+        height: auto;
+        max-height: 80px;
+        padding: 5px 10px;
+    }
+}
+
 @media(max-width: 800px)
 {
     header 
