@@ -1,0 +1,215 @@
+:root 
+{
+    --background-color-dark: #1e1e1e;
+    --background-color-darker: #121212;
+    --text-color-light: #e0e0e0;
+    --primary-color: #9b59b6;
+    --primary-color-hover: #cb89fc;
+    --secondary-color: #5DADE2;
+    --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.7);
+    --box-shadow-heavy: 0 2px 10px rgba(0, 0, 0, 0.7);
+    --box-shadow-project: 0 0 10px rgba(255, 255, 255, 0.1);
+    --box-shadow-project-hover: 0 0 15px rgba(255, 255, 255, 0.2);
+    --border-color: #333333;
+}
+
+header 
+{
+    background-color: var(--background-color-dark);
+    color: var(--text-color-light);
+    box-shadow: var(--box-shadow-heavy);
+}
+
+header nav ul li a 
+{
+    color: var(--primary-color);
+}
+
+header #pulsanti button 
+{
+    color: var(--primary-color);
+}
+
+header #pulsanti button:hover 
+{
+    background-color: var(--primary-color);
+    color: var(--background-color-dark);
+}
+
+body
+{
+    background-color: var(--background-color-darker);
+    color: var(--text-color-light);
+}
+
+.grid-container > div:first-child, 
+.grid-container > div:nth-child(2), 
+.grid-container > div:nth-child(3), 
+.grid-container > div:last-child
+{
+    background-color: var(--background-color-dark);
+    box-shadow: var(--box-shadow-light);
+}
+
+.grid-container > div:not(
+    :first-child, 
+    :nth-child(2), 
+    :nth-child(3), 
+    :last-child) 
+{
+    background-color: var(--background-color-dark);
+    box-shadow: var(--box-shadow-light);
+}
+
+h1
+{
+    color: var(--primary-color);
+}
+
+div
+{
+    background-color: var(--background-color-dark);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-light);
+}
+
+a
+{
+    color: var(--primary-color);
+}
+
+th, td 
+{
+    border: 1px solid var(--border-color);
+}
+
+th
+{
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+span 
+{
+    color: var(--secondary-color);
+}
+
+#hobby, #competenze
+{
+    color: var(--primary-color);
+}
+
+.filtro-progetti
+{
+    box-shadow: none;
+}
+
+.filtro-progetti button 
+{
+    background-color: var(--primary-color);
+    color: var(--background-color-darker);
+    border: 2px solid var(--primary-color);
+}
+
+.filtro-progetti button:hover 
+{
+    background-color: var(--primary-color-hover);
+    color: var(--background-color-darker);
+}
+
+.filtro-progetti button.show 
+{
+    background-color: var(--secondary-color);
+    color: var(--background-color-darker);
+    border-color: var(--secondary-color);
+}
+
+.progetti 
+{ 
+    box-shadow: none;
+    border-radius: 5px;
+    transition: border-radius 0.5s ease;
+}
+
+.progetti.show 
+{
+    padding: 20px;
+    margin: 20px;
+    box-shadow: var(--box-shadow-light);
+    transition: box-shadow 0.5s ease;
+}
+
+.progetto 
+{
+    background-color: var(--background-color-dark);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow-project);
+}
+
+.progetto:hover 
+{
+    box-shadow: var(--box-shadow-project-hover);
+    transition: box-shadow 0.5s ease;
+}
+
+.progetto img
+{
+    box-shadow: var(--box-shadow-light);
+}
+
+.progetto h3
+{
+    color: var(--primary-color);
+}
+
+.progetto a 
+{
+    background-color: var(--primary-color);
+    color: var(--background-color-darker);
+}
+
+.progetto a:hover 
+{
+    background-color: var(--primary-color-hover);
+}
+
+form
+{
+    border-radius: 5px;
+}
+
+form label 
+{
+    color: var(--text-color-light);
+}
+
+form input, form textarea 
+{
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color-dark);
+    color: var(--text-color-light);
+}
+
+form input::placeholder,
+form textarea::placeholder 
+{
+    color: #888888;
+}
+
+form button[type="submit"] 
+{
+    background-color: var(--primary-color);
+    color: var(--background-color-darker);
+}
+
+form button[type="submit"]:hover 
+{
+    background-color: var(--primary-color-hover);
+}
+
+form button[type="submit"]:focus, 
+.progetto a:focus,
+.filtro-progetti button:focus
+{
+    outline: 3px solid var(--primary-color);
+}

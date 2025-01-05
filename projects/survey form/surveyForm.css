@@ -1,0 +1,118 @@
+.background-color
+{
+  background-color:#1b1b32;
+}
+
+body
+{
+  background-image: url(https://wallpapers.com/images/high/non-copyrighted-starry-night-sky-ufytceux06a9lsx7.webp) ;
+  font-family: tahoma;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #99aaff
+}
+
+h1
+{
+  font-size:40px
+
+}
+
+h1,p
+{
+  text-align: center;
+}
+
+.area1
+{
+  display: block;
+  text-align:center;
+  font-size:30px;
+}
+
+div
+{
+  background-color:#1b1b32aa;
+  width: 90%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 60px;
+  margin-bottom: 60;
+  height: auto;
+  max-width: 900px;
+    
+}
+
+.name-email-age
+{
+  display: block;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  min-height: 30; 
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+  outline: none;
+}
+
+select
+{
+  display: block;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #777777;
+  min-height: 30; 
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+  outline: none;
+}
+
+fieldset 
+{
+  border: none;
+  padding-bottom: 25px;
+  border-bottom: 5px solid #0a0a23;
+  margin-left: 70;
+  margin-right: 70;
+}
+
+input[type="radio"]
+{
+  display: inline;
+  margin-left: 106px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 65px;
+}
+
+textarea
+{
+  background-color: #0a0a23;
+  border: none;
+  color: white;
+  outline: none;
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 100;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color:#0a0a23;
+  color: white;
+  border-color: white;
+  min-width: 300px;
+}
+
+fieldset:last-of-type
+{
+  border: none;
+}

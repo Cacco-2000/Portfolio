@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cashRegister.css" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <main>
+        <div class = "title">
+          <h1>Cash Register Project</h1>
+        </div>
+        <div class = "purchase-container">
+            <h3>Please enter cash from customer:
+            </h3>
+            <input type = "number" min="0" id="cash"></input>
+        </div>
+        <div id = "change-due">
+        </div>
+        <div class = "cash-register-container">
+          <div class = "total-container">
+            <div class = "total-screen">
+              <span>Total: $3.26
+              </span>
+            </div>
+          </div>
+          <div class ="legs-container">
+            <div class = "leg1"></div>
+            <div class = "leg2"></div>
+          </div>
+          <div class = "cash-register-body">
+            <div class="change-screen">
+              <h3>Change in drawer:</h3>
+                <ul id="drawer-display">
+                  <li>Pennies: $0.93</li>
+                  <li>Nickels: $2.05</li>
+                  <li>Dimes: $2.7</li>
+                  <li>Quarters: $3.25</li>
+                  <li>Ones: $89</li>
+                  <li>Fives: $50</li>
+                  <li>Tens: $20</li>
+                  <li>Twenties: $60</li>
+                  <li>Hundreds: $100</li>
+                </ul>
+            </div>
+            <div class = "button">
+              <button type = "button" id = "purchase-btn">Purchase</button>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src = "cashRegister.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="productLandingPage.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <main id="main">
+      <header id="header">
+        <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/11529/11529574.png"/>
+        <h1 class="header-text"><strong>Original Violins</strong></h1>
+        <nav id="nav-bar">
+          <ul>
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#concert-demostration">Concert-demostration</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </ul>
+        </nav>
+        <div class="header-right"></div>
+          <h1 class="header-text"><strong>Original Violins</strong></h1>
+          <img class="img-right" id="header-img" src="https://cdn-icons-png.flaticon.com/512/11529/11529574.png"/>
+        </div>
+      </header>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <h1 id="concert-demostration"><strong>Handcrafted, home-made masterpieces</strong></h1>
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0Cg_0jepxow" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <label for="email"></label>
+        <input class="email" type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input class="submit" type="submit" id="submit" value="GET STARTED">
+      </form>
+      <div class="divider top"></div>
+      <div class="text-container" id="features">
+	      <section class="text">
+          <i class="icon fas fa-fire"></i>
+          <h1><strong>Premium Materials</strong></h1>
+          <p>Our violins use the most high quality wood which is sourced locally. This will increase the longevity of your purchase.</p>
+        </section>
+	      <section class="text">
+          <i class="fas fa-ship"></i>
+          <h1><strong>Fast Shipping</strong></h1>
+          <p>We make sure you recieve your violin as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </section>
+	      <section class="text">
+          <i class="fas fa-heartbeat"></i>
+          <h1><strong>Quality Assurance</strong></h1>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </section>
+      </div>
+      <div class="divider bottom"></div>
+      <h1 class="pricing "><strong>Pricing</strong></h1>
+      <section id="pricing" class="section">
+        <div>
+          <h1 class="pricing"><strong>Student Violin (Entry-Level)</strong></h1>
+          <h1 class="price"><i class="fas fa-dollar-sign"></i>300</h1>
+          <p>This violin is designed for beginners or students just starting out. Made with basic materials such as lower-quality maple and spruce, these violins are often mass-produced. They provide a decent sound for the initial learning years and are typically more durable, making them suitable for children or first-time players.</p>
+          <input class="select" type="submit" id="submit" value="SELECT">
+        </div>
+        <div class="price-divider"></div>
+        <div>
+          <h1 class="pricing"><strong>Intermediate Violin</strong></h1>
+          <h1 class="price"><i class="fas fa-dollar-sign"></i>1200</h1>
+          <p>Suitable for advanced students or amateur musicians looking for a better sound quality. Made with higher-grade woods (seasoned maple and spruce) and more attention to detail in construction. Intermediate violins may be handcrafted or semi-handcrafted, with a more refined finish.</p>
+          <input class="select" type="submit" id="submit" value="SELECT">
+        </div>
+        <div class="price-divider"></div>
+        <div>
+          <h1 class="pricing"><strong>Professional Violin</strong></h1>
+          <h1 class="price"><i class="fas fa-dollar-sign"></i>3000</h1>
+          <p> Built entirely by hand by expert luthiers using high-quality aged woods like flamed maple and red spruce. Designed for professional musicians, offering a rich, powerful, and balanced sound with excellent projection and responsiveness.</p>
+           <input class="select" type="submit" id="submit" value="SELECT"> 
+        </div>
+      </section>
+      <div class="info">
+          <ul>
+            <a class="nav-link" href="#main">Privacy</a>
+            <a class="nav-link" href="#main">Terms</a>
+            <a class="nav-link" href="#main">Contact</a>
+          </ul>
+          <p class="end">Copyright 2024, Original violins</p>
+        </div>
+    </main>
+  </body>
+</html>

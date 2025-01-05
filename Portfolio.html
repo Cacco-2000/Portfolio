@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\Portfolio(base).css">
+    <link id="theme-link" rel="stylesheet" href="css\TemaChiaro.css">
+    <link rel="stylesheet" href="css/Media.css">
+    <title data-translate="title">Portfolio Spinelli Marco (2025)</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introduzione" data-translate="introduction">Introduzione</a></li>
+                <li><a href="#certificazioni" data-translate="certifications">Certificazioni</a></li>
+                <li><a href="#progetti" data-translate="projects">Progetti</a></li>
+                <li><a href="#competenze-hobby" data-translate="skills/hobbies">Competenze/Hobby</a></li>
+                <li><a href="#contattami" data-translate="contact-me">Contattami</a></li>
+            </ul>
+            <div id="pulsanti">
+                <button id="cambia-lingua" aria-label="Cambia lingua della pagina" data-translate="button-language">English</button>
+                <button id="cambia-tema" aria-label="Cambia Tema del Sito" data-translate="button-theme-dark">Tema Scuro</button>
+            </div>
+        </nav>
+    </header>
+    <div class="grid-container">
+        <div id="introduzione">
+            <h1 data-translate="welcome-title">Benvenuti</h1>
+            <p data-translate="welcome-description">Ciao, sono <span>Marco</span> e sto imparando le fondamenta del web Developing 
+                (<span>HTML</span>
+                ,<span> CSS</span> e 
+                <span> Javascript</span>).
+            </p>
+        </div>
+        <div id="certificazioni">
+            <h1 data-translate="certifications-title">Certificazioni</h1>
+            <h1 data-translate="certifications-timeline">Timeline</h1>
+            <table>
+                <tr>
+                    <th data-translate="timeline-year"><h2>Anno</h2></th>
+                    <th data-translate="timeline-experience"><h2>Esperienza</h2></th>
+                </tr>
+                <tr>
+                    <td data-translate="date-1">Fine Settembre 2024:</td>
+                    <td data-translate="experience-1">Ho iniziato il primo corso di carriera del sito 
+                        <span>FreeCodeCamp</span> 
+                        (<span>Responsive Web Design</span>).
+                    </td>
+                </tr>
+                <tr>
+                    <td data-translate="date-2">Inizio Novembre 2024:</td>
+                    <td data-translate="experience-2">Ho ottenuto la mia prima 
+                    <a href="https://www.freecodecamp.org/certification/Marco-C/responsive-web-design" 
+                        aria-label="Visita certificazione" target="_blank" rel="noopener noreferrer" 
+                        data-translate="certification-link">certificazione
+                    </a> di HTML e CSS (<span>Responsive Web Design</span>).</td>
+                </tr>
+            </table>
+            <a id ="info" href="https://www.freecodecamp.org/Marco-C" 
+                aria-label="Visita portfolio FreeCodeCamp" 
+                target="_blank" rel="noopener noreferrer" data-translate="portfolio-link">Portfolio di FreeCodeCamp completo
+            </a>
+        </div>
+        <div id = "progetti">
+            <h1 data-translate="projects-title">Progetti</h1>
+            <div class="filtro-progetti">
+                <button id="filtro-html-css">HTML/CSS</button>
+                <button id="filtro-html-css-js">HTML/CSS/JavaScript</button>
+                <button id="filtro-tutti" data-translate="see-all-filter">Mostra Tutti</button>
+            </div>
+            <div class="progetti">
+                <div class="progetto" data-tags = "html css">
+                    <img src="Images\SurveyForm.jpg" alt="SurveyForm" loading="lazy">
+                    <h3 data-translate="project-1">1: Survey Form</h3>
+                    <a href="projects/survey%20form/surveyForm.html" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visita Progetto"
+                        data-translate="project-link-1">Visita il progetto
+                    </a>
+                </div>
+        
+                <div class="progetto" data-tags = "html css">
+                    <img src="Images\TributePage.jpg" alt="TributePage" loading="lazy">
+                    <h3 data-translate="project-2">2: Tribute Page</h3>
+                    <a href="projects/tribute%20page/tributePage.html" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        aria-label="Visita Progetto"
+                        data-translate="project-link-2">Visita il progetto
+                    </a>
+                </div>
+        
+                <div class="progetto" data-tags = "html css">
+                    <img src="Images\TechnicalDocumentationPage.jpg" alt="TechnicalDocumentationPage" loading="lazy">
+                    <h3 data-translate="project-3">3: Technical Documentation Page</h3>
+                    <a href="projects/technical%20documentation%20page/technicalDocumentationPage.html" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visita Progetto"
+                        data-translate="project-link-3">Visita il progetto
+                    </a>
+                </div>
+
+                <div class="progetto" data-tags = "html css">
+                    <img src="Images\ProductLandingPage.jpg" alt="ProductLandingPage" loading="lazy">
+                    <h3 data-translate="project-4">4: Product Landing Page</h3>
+                    <a href="projects/product%20landing%20page/productLandingPage.html" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visita Progetto"
+                        data-translate="project-link-4">Visita il progetto
+                    </a>
+                </div>
+        
+                <div class="progetto" data-tags = "html css">
+                    <img src="Images\PersonalPortfolioWebpage.jpg" alt="personalPortfolioWebpage" loading="lazy">
+                    <h3 data-translate="project-5">5: Personal Portfolio Webpage</h3>
+                    <a href="projects/personal%20portfolio%20webpage/personalPortfolioWebpage.html" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visita Progetto"
+                        data-translate="project-link-5">Visita il progetto
+                    </a>
+                </div>
+        
+                <div class="progetto" data-tags = "html css javascript">
+                    <img src="Images\PalindromeChecker.jpg" alt="palindromeChecker" loading="lazy">
+                    <h3 data-translate="project-6">6: Palindrome Checker</h3>
+                    <a href="projects/palindrome%20checker/palindromeChecker.html" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visita Progetto"
+                        data-translate="project-link-6">Visita il progetto
+                    </a>
+                </div>
+
+                <div class="progetto" data-tags = "html css javascript">
+                    <img src="Images\RomanNumeralConverter.jpg" alt="romanNumeralConverter" loading="lazy">
+                    <h3 data-translate="project-7">7: Roman Numeral Converter</h3>
+                    <a href= "projects/roman%20numeral%20converter/romanNumeralConverter.html" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visita Progetto"
+                        data-translate="project-link-7">Visita il progetto
+                    </a>
+                </div>
+        
+                <div class="progetto" data-tags = "html css javascript">
+                    <img src="Images\TelephoneNumberValidator.jpg" alt="telephoneNumberValidator" loading="lazy">
+                    <h3 data-translate="project-8">8: Telephone Number Validator</h3>
+                    <a href="projects/telephone%20number%20validator/telephoneNumberValidator.html" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visita Progetto"
+                        data-translate="project-link-8">Visita il progetto
+                    </a>
+                </div>
+        
+                <div class="progetto" data-tags = "html css javascript">
+                    <img src="Images\CashRegisterProject.jpg" alt="cashRegister" loading="lazy">
+                    <h3 data-translate="project-9">9: Cash Register</h3>
+                    <a href="projects/cash%20register/cashRegister.html" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visita Progetto"
+                        data-translate="project-link-9">Visita il progetto
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="competenze-hobby">
+            <h1 id="competenze" data-translate="competents-title">Competenze</h1>
+            <ul id="lista-competenze">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div>
+            <h1 id="hobby" data-translate="hobby-title">Hobby</h1>
+            <ul id="lista-hobby">
+                <li data-translate="hobby-1">Leggere</li>
+                <li data-translate="hobby-2">Ascoltare Musica</li>
+                <li data-translate="hobby-3">Videogiocare</li>
+                <li data-translate="hobby-4">Programmare</li>
+            </ul>
+        </div>
+        <div id="contattami">
+            <h1 data-translate="contact-title">Contattami</h1>
+            <form id="contact-form" action="https://formspree.io/f/xannplbl" method="POST">
+                <label for="nome" data-translate="name">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+                <label for="oggetto" data-translate="object">Oggetto:</label>
+                <input type="text" id="oggetto" name="oggetto" placeholder="Inserisci l'oggetto" required>
+                
+                <label for="messaggio" data-translate="message">Messaggio:</label>
+                <textarea id="messaggio" name="messaggio" placeholder="Scrivi il tuo messaggio" rows="5" required></textarea>
+                
+                <button type="submit" aria-label="Invia dati forniti tramite il form" data-translate="submit">Invia</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/Portfolio.js"></script>
+</html>

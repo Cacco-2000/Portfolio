@@ -1,0 +1,484 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  
+  :root
+  {
+    --color1: #2E2B2B; 
+    --color2:  #1E1B1B;
+    --color3: #FFA500;
+    --color4: #DAA520;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html
+  {
+    background-color: var(--color1);
+  }
+  
+  
+  header {
+      width: 100%;
+      background-color: var(--color1);
+      border-bottom: 2px solid var(--color3);
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      position: fixed;
+      top: 0;
+      left: 0;
+  }
+  
+  header #nav-bar { 
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      width: 100%; 
+      margin-left: 0; 
+  }
+  
+  header #nav-bar ul {
+      display: flex;
+      gap: 100px;
+      padding: 0;
+      margin: 0 50px;
+      font-size: 30px;
+      justify-content: center; 
+  }
+  
+  header a
+  {
+    text-decoration: none;
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+  } 
+  
+  header a:hover
+  {
+    border: none;
+    border-left: 2px solid var(--color3);
+    border-right: 2px solid var(--color3);
+  } 
+  
+  a, h1, h2, .email::placeholder, .submit, .email:focus, .select, .end
+  {
+    color: var(--color4);
+    font-style: italic;
+  }
+  
+  p
+  {
+    font-style: italic;
+  }
+  
+  h1:not(.header-text)
+  {
+    text-align: center;
+    display: block;
+  }
+  
+  img
+  {
+    width: max(4rem, 4vw);  
+  }
+  
+  .header-right 
+  {
+      margin-left: auto; 
+      display: flex;
+      align-items: center;
+      gap: 10px; 
+  }
+  
+  .img-right
+  {
+    transform: scaleX(-1);
+  }
+  
+  main
+  {
+      margin-top: 80px;
+  }
+  
+  iframe {
+      width: 100%; 
+      height: 40%; 
+      max-width: 800px; 
+      margin: 20px auto; 
+      display: block;
+      border: 5px solid black;
+      border-radius: 15px;
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 1);
+      
+  }
+  
+  
+  
+  .email, .submit, .select
+  {
+    display: block;
+    text-align: center;
+    min-height: 30px; 
+    margin: 0 auto;
+    outline: none;
+    background-color: var(--color1);
+    border: none; 
+    border-radius: 15px;
+  }
+  
+  .email
+  {
+    width: 30%;
+    border-left: 2px solid  transparent;
+    border-right: 2px solid  transparent;
+  }
+  
+  .email:hover
+  {
+    border: none;
+    border-left: 2px solid  var(--color3);
+    border-right: 2px solid  var(--color3);
+    border-radius: 15px;
+  }
+  
+  .email:focus
+  {
+    caret-color: white;
+    border: 1px solid var(--color3);
+    background-color: var(--color2);
+    color: var(--color4); 
+  }
+  
+  .submit
+  {
+    width: 15%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border-left: 2px solid  transparent;
+    border-right: 2px solid  transparent;
+    color: var(--color4);
+  }
+  
+  .submit:hover
+  {
+    border: none;
+    border-left: 2px solid  var(--color3);
+    border-right: 2px solid  var(--color3);
+    border-radius: 15px;
+  }
+  
+  .submit:focus
+  {
+    background-color: var(--color2);
+    border: 1px solid var(--color3);
+  }
+  
+  
+  .text-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      margin-top: 20px;
+  }
+  
+  .text {
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-start; 
+      padding: 10px; 
+      height: auto;
+      border-right: 2px solid var(--color3);
+      letter-spacing: 0.6px; 
+  }
+  
+  .text:last-child
+  {
+    border-right: none;
+  }
+  
+  .text i
+  {
+    text-align: center;
+    font-size: 3rem;
+    color:var(--color3);
+    margin-bottom: 10px;
+  }
+  
+  .text h1
+  {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .text p, .section p
+  {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  
+  .top
+  {
+    border: none;
+    padding-top: 25px;
+    border-top: 2px solid  var(--color3);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+  }
+  
+  .bottom
+  {
+    border: none;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--color3);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+  }
+  
+  
+  .section
+  {
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 2px solid var(--color3);
+    border-right: 2px solid var(--color3);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+  }
+  
+  .price, h1 i
+  {
+    font-size: 50px;
+    margin-bottom: 10px
+  }
+  
+  .pricing
+  {
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  
+  .select
+  {
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: var(--color4);
+    font-size: 30px;
+    border: 2px solid  transparent;
+  }
+  
+  .select:hover
+  {
+    border: 2px solid var(--color3);
+    border-radius: 15px;
+  }
+  
+  .select:focus
+  {
+    background-color: var(--color2);
+    border: 1px solid var(--color3);
+  }
+  
+  .price-divider {
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-start; 
+      height: auto;
+      border-bottom: 2px solid var(--color3); 
+  }
+  
+  .price-divider:last-child
+  {
+    border-bottom: none;
+  }
+  
+  .info
+  {
+    
+    text-align: right; 
+    background-color: var(--color2);
+    border: 2px solid var(--color3);
+    border-radius: 15px;
+    margin-left: 70;
+    margin-right: 70;
+  }
+  
+  .info a
+  {
+    margin-left: 25px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .end
+  {
+    margin-right: 10px;
+  }
+  
+  
+  @media (max-width: 1360px) {
+      header 
+    {
+          flex-direction: column;
+          padding: 10px 0;
+      }
+  
+    header #nav-bar
+    { 
+      margin-left: 0; 
+    }
+  
+    main
+    {
+      margin-top: 300px;
+    }
+  }
+  
+  /* Schermi medi (tablet in modalità verticale, piccoli laptop) */
+  @media (max-width: 1024px) {
+  
+      .email {
+          width: 50%;
+      }
+      
+      .submit {
+          width: 25%;
+      }
+      
+      .text-container {
+          grid-template-columns: 1fr 1fr;
+      }
+      
+      .text h1 {
+          font-size: 32px;
+      }
+      
+      .text p, .section p {
+          font-size: 18px;
+          margin-left: 10px;
+      }
+      
+      .price, h1 i {
+          font-size: 40px;
+      }
+      
+      .select {
+          width: 40%;
+          font-size: 24px;
+      }
+  
+    .text-container {
+          grid-template-columns: 1fr;
+      }
+    
+    main
+    {
+      margin-top: 300px;
+    }
+  }
+  
+  /* Schermi piccoli (smartphone) */
+  @media (max-width: 940px) {
+      
+      header #nav-bar 
+    {
+          margin-left: 0;
+      }
+      
+      header #nav-bar ul {
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          font-size: 20px;
+          margin: 0;
+      }
+      
+      .email {
+          width: 80%;
+      }
+      
+      .submit {
+          width: 50%;
+          margin-bottom: 50px;
+      }
+      
+      .text-container {
+          grid-template-columns: 1fr;
+      }
+      
+      .text h1 {
+          font-size: 24px;
+      }
+      
+      .text p, .section p {
+          font-size: 16px;
+          margin-left: 5px;
+      }
+      
+      .price, h1 i {
+          font-size: 30px;
+      }
+      
+      .select {
+          width: 70%;
+          font-size: 20px;
+      }
+      
+      .info {
+          text-align: center;
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+  
+    main
+    {
+      margin-top: 350px;
+    }
+  }
+  
+  /* Schermi molto piccoli (telefoni in modalità landscape o schermi molto stretti) */
+  @media (max-width: 480px) {
+      .email {
+          width: 90%;
+      }
+      
+      .submit {
+          width: 70%;
+      }
+      
+      .text h1 {
+          font-size: 20px;
+      }
+      
+      .text p, .section p {
+          font-size: 14px;
+          margin-left: 5px;
+      }
+      
+      .price, h1 i {
+          font-size: 24px;
+      }
+      
+      .select {
+          width: 80%;
+          font-size: 18px;
+      }
+   
+  }

@@ -1,0 +1,240 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+:root
+{
+  --color1: #58111A; 
+  --color2:  #C6011F;
+  --color3: #810909;
+  --color4: #6495ED;
+}
+body
+{
+  background-color: var(--color4);
+}
+
+.logo-container {
+  color: var(--color2);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: fit-content;
+  text-align: center;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.6);  
+}
+
+.logo-container
+{
+  background-color: var(--color1);
+}
+
+.logo-container h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+h1 
+{
+  text-align: center;
+  margin: 20px;
+  color: var(--color2);
+}
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  25% {
+    color: orange;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+h1 .palindrome, h2 .palindrome, #result span 
+{
+  display: inline-block;
+  animation: color-change 2s ease-in-out infinite;; 
+}
+
+.input-container
+{
+  background-color: var(--color3);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: fit-content;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.6);
+}
+
+h2 .letter
+{
+  font-size: 30px;
+}
+
+h1 .letter
+{
+  font-size: 40px;
+}
+
+.input-container h2
+{
+  color: var(--color2);
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.input-container #text-input
+{
+  background-color: var(--color3);
+  padding: 5px;
+  border: 2px solid  transparent;
+  border-bottom: 2px solid black;
+  width: fit-content;
+  text-align: center;
+}
+
+#check-btn {
+  background-color: var(--color3);
+  color: var(--color2);
+  width: 20%;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 20px;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.6);
+}
+
+.button-container, .explanation
+{
+  height: auto;
+  text-align: center;
+}
+
+#check-btn:hover, #explanation-btn:hover {
+  color: black;
+}
+
+#explanation
+{
+  
+  background-color: var(--color3);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
+  width: fit-content;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.6);
+}
+
+#explanation-btn {
+  background-color: var(--color3);
+  color: var(--color2);
+  border: 2px  solid transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media (max-width: 480px) {
+  .logo-container h1 {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin: 10px;
+  }
+
+  h1 .letter {
+    font-size: 30px;
+  }
+
+  .input-container h2 {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .input-container #text-input {
+    font-size: 16px;
+  }
+
+  #check-btn, #explanation-btn {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .logo-container h1 {
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 15px;
+  }
+
+  h1 .letter {
+    font-size: 36px;
+  }
+
+  .input-container h2 {
+    font-size: 20px;
+  }
+
+  .input-container #text-input {
+    font-size: 18px;
+  }
+
+  #check-btn, #explanation-btn {
+    font-size: 18px;
+    padding: 10px 25px;
+  }
+}
+ 
+@media (max-width: 1024px) {
+  .logo-container h1 {
+    font-size: 34px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: 20px;
+  }
+
+  .input-container h2 {
+    font-size: 22px;
+  }
+
+
+  #check-btn, #explanation-btn {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+}
+ 
+@media (min-width: 1025px) {
+
+  #check-btn, #explanation-btn {
+    font-size: 20px;
+    padding: 15px 40px;
+  }
+}

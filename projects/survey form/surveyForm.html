@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="surveyForm.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form</title>
+</head>
+<body>
+  <div>
+    <h1 id="title">Test Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us inprove the platform</p>
+  <form id="survey-form">
+    <fieldset>
+    <label class="area1" id="name-label">Name:
+      <input class="name-email-age" id="name" placeholder="Enter your name" required/>
+    </label>
+    <label class="area1" id="email-label">Email:
+      <input class="name-email-age" id="email" type="email" placeholder="Enter your email" required/>
+    </label>
+    <label class="area1" id="number-label">Age(optional):
+      <input class="name-email-age" id="number" type="number" placeholder="  Enter your age" min="18" max="150"/>
+    </label>
+    <label class="area1">Best option to describe your current role:
+    <select id="dropdown"> 
+      <option disabled selected value="">(Choose one)</option>
+      <option value="1">Student</option>
+      <option value="2">Full time job</option>
+      <option value="3">Full time learner</option>
+      <option value="4">Prefer not to say</option>
+      <option value="5">Other</option>
+    </select>
+    </label>
+    </fieldset>
+    <fieldset>
+    <label class="area1">Would you recommend this page to a friend?</label>
+      <label>
+        <input type="radio" name="choices" value="of course">Of course</input>
+      </label>
+      <label>
+        <input type="radio" name="choices" value="maybe">Maybe</input>
+      </label>
+      <label>
+        <input type="radio" name="choices" value="absolutely not">Absolutely not</input>
+      </label>
+    </fieldset>
+    <fieldset>
+    <label class="area1">What would you like to see added in this page?</label>
+    <ul>
+      <li><input type="checkbox" value="wiki">Wiki</input></li>
+      <li><input type="checkbox" value="multilingual text">Multilingual text</input></li>
+      <li><input type="checkbox" value="data visualization">Data visualization</input></li>
+      <li><input type="checkbox" value="videos">Videos</input></li>
+      <li><input type="checkbox" value="direct feedback">Direct feedback</input></li>
+      <li><input type="checkbox" value="link to forums">Link to forums</input></li>
+      <li><input type="checkbox" value="other not mentioned">Other not mentioned</input></li>
+    </ul>
+    </fieldset>
+    <fieldset>
+    <label class="area1">Any comments or suggestions?</label>
+      <textarea class="textarea" placeholder ="Enter your comment here"></textarea>
+      <input type="submit" value="Submit" id="submit"/>
+    </fieldset>
+  </form>
+  </div>
+</body>

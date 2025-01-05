@@ -1,0 +1,164 @@
+:root 
+{
+    --primary-color: #007BFF;
+    --secondary-color: #0056b3;
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --white-color: white;
+    --border-color: #ddd;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --box-shadow-hover: 0 0 15px rgba(0, 0, 0, 0.3);
+    --box-shadow-img: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+header 
+{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    box-shadow: var(--box-shadow);
+}
+
+header nav ul li a 
+{
+    color: var(--white-color);
+}
+
+header #pulsanti button 
+{
+    color: var(--white-color);
+}
+
+header #pulsanti button:hover 
+{
+    background-color: var(--secondary-color);
+}
+
+body 
+{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.grid-container > div:first-child, 
+.grid-container > div:nth-child(2), 
+.grid-container > div:nth-child(3), 
+.grid-container > div:last-child 
+{
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+}
+
+.grid-container > div:not(:first-child, :nth-child(2), :nth-child(3), :last-child) 
+{
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+}
+
+h1 
+{
+    color: var(--primary-color);
+}
+
+div 
+{
+    background-color: var(--white-color);
+}
+
+a 
+{
+    color: var(--primary-color);
+}
+
+th, td 
+{
+    border: 2px solid var(--border-color);
+}
+
+th 
+{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.progetti 
+{
+    padding: 20px;
+    transition: height 0.5s ease;
+}
+
+.filtro-progetti button 
+{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 2px solid var(--primary-color);
+}
+
+.filtro-progetti button:hover 
+{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.filtro-progetti button.show 
+{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-color: var(--secondary-color);
+}
+
+.progetto 
+{
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow);
+}
+
+.progetto:hover 
+{
+    box-shadow: var(--box-shadow-hover);
+    transition: box-shadow 0.5s ease;
+}
+
+.progetto img 
+{
+    box-shadow: var(--box-shadow-img);
+}
+
+.progetto h3 
+{
+    color: var(--primary-color);
+}
+
+.progetto a 
+{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.progetto a:hover 
+{
+    background-color: var(--secondary-color);
+}
+
+form input, form textarea 
+{
+    border: 1px solid var(--border-color);
+}
+
+form button[type="submit"] 
+{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+form button[type="submit"]:hover 
+{
+    background-color: var(--secondary-color);
+}
+
+form button[type="submit"]:focus, 
+.progetto a:focus,
+.filtro-progetti button:focus 
+{
+    outline: 3px solid var(--primary-color);
+}

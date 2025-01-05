@@ -1,0 +1,192 @@
+:root
+{
+  --color1: #e1e1f1;
+  --color2: rgba(119, 119, 119, 0.2);
+  --color3: #fae3e3;
+  --color4: #fbf8b3;
+  --color5: #f5d38a;
+
+}
+
+*,
+::before,
+::after 
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main
+{
+  margin: 50px;
+  
+}
+
+body 
+{
+  background-color: var(--color1);
+}
+
+html, body 
+{
+  height: 100%;
+  width: 100%;
+}
+
+.title
+{
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 10px auto;
+  width: fit-content;
+  height: auto;
+  font-style: italic;
+}
+
+.converter-container
+{
+  text-align: center;
+  border: 2px solid black;
+  margin: 50px auto;
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  background-color: var(--color2)
+
+}
+
+.converter-container h2
+{
+  margin: 10px;
+  font-size: 30px
+}
+
+#number 
+{
+  display: block;   
+  margin: 20px auto;
+  width: 70%;
+  padding: 5px;
+}
+
+#convert-btn
+{
+  margin: 10px auto;
+  font-size: 20px;
+  width: 40%;
+}
+
+.output-container
+{
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.output-container.error 
+{
+  background-color: #fae3e3;
+  border: 2px solid red;
+  color: red;
+}
+
+.output-container.warning 
+{
+  background-color: #fbf8b3; 
+  border: 2px solid #f5d38a; 
+}
+
+@media (max-width: 480px) 
+{
+  body 
+  {
+    font-size: 14px; 
+  }
+
+  .title h1 
+  {
+    font-size: 20px; 
+  }
+
+  .converter-container 
+  {
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto; 
+  }
+
+  .converter-container h2
+  {
+    font-size: 20px;
+  }
+
+  #number 
+  {
+    width: 100%; 
+  }
+
+  #convert-btn 
+  {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .output-container 
+  {
+    font-size: 20px; 
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) 
+{
+  .converter-container 
+  {
+    width: 80%;
+    padding: 20px;
+  }
+
+  #convert-btn 
+  {
+    width: 50%;
+    font-size: 18px;
+  }
+
+  .output-container 
+  {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) 
+{
+  .converter-container 
+  {
+    padding: 30px 50px;
+  }
+
+  #convert-btn 
+  {
+    width: 40%;
+    font-size: 20px;
+  }
+
+  .output-container 
+  {
+    font-size: 30px; 
+  }
+}
+
+@media (min-width: 1201px) 
+{
+  .converter-container 
+  {
+    padding: 40px 60px;
+  }
+
+  .output-container 
+  {
+    font-size: 32px;
+  }
+}

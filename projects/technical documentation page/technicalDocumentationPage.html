@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="technicalDocumentationPage.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navbar" class="navbar">
+        <header><h1>C++ Basics Documentation</h1></header>
+        <ul class="navigation">
+          <li class="info"><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li class="info"><a class="nav-link" href="#What_is_C++?">What is C++?</a></li>
+          <li class="info"><a class="nav-link" href="#Why_use_C++">Why use C++</a></li>
+          <li class="info"><a class="nav-link" href="#Difference_between_C_and_C++">Difference between C and C++</a></li>
+          <li class="info"><a class="nav-link" href="#Hello_world">Hello world</a></li>
+          <li class="info"><a class="nav-link" href="#Variables">Variables</a></li>
+          <li class="info"><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main id="main-doc">
+      <h1 class="title"><strong>C++ Basics Documentation</strong></h1> 
+      <section class="main-section" id="Introduction">
+        <header><h1>Introduction</h1></header>
+          <p><strong>C++</strong> is a popular programming language. It is used to create computer programs, and is one of the most used language in game development. It was developed as an extension of <strong>C</strong>, and even with some differences, both languages have almost the same syntax.</p>
+          <p><strong>C++</strong> extends <strong>C</strong> by integrating <strong>object-oriented programming <code>(OOP)</code></strong> features, enhancing the language's capability to manage complex software systems. <strong><code>OOP</code></strong> in <strong>C++</strong> focuses on data encapsulation, inheritance, and polymorphism, enabling developers to create programs using objects and classes.</p>
+      </section>
+      <section class="main-section" id="What_is_C++?">
+        <header><h1>What is C++?</h1></header>
+          <p><strong>C++</strong> is a cross-platform language that can be used to create high-performance applications. It was developed by <strong><code>Bjarne Stroustrup</code></strong>, as an extension to the <strong>C</strong> language.</p>
+          <p><strong>C++</strong> gives programmers a <strong><code>high level</code></strong> of control over system resources and memory.</p>
+          <p>The language was updated 5 major times:</p>
+          <ul>
+            <li>In<strong> 2011 </strong>to <strong>C++11.</strong></li>
+            <li>In<strong> 2014 </strong>to <strong>C++14.</strong></li>
+            <li>In<strong> 2017 </strong>to <strong>C++17.</strong></li>
+            <li>In<strong> 2020 </strong>to <strong>C++20.</strong></li>
+            <li>In<strong> 2023 </strong>to <strong>C++23.</strong></li>
+          </ul>
+      </section>
+      <section class="main-section" id="Why_use_C++">
+        <header><h1>Why use C++</h1></header>
+          <p><strong>C++</strong> is one of the world's <strong>most popular programming languages.</strong> It can be found in today's operating systems, Graphical User Interfaces, and embedded systems. It is an <code>object-oriented programming language</code> which gives a clear structure to programs and allows code to be reused, lowering development costs.</p>
+          <p><strong>C++</strong> is portable and can be used to develop applications that can be adapted to multiple platforms. It is <strong>fun and easy to learn!</strong></p>
+          <p>As <strong>C++</strong> is close to <strong>C, C#</strong> and <strong>Java</strong>, it makes it easy for programmers to switch to <strong>C++</strong> or vice versa.</p>
+      </section>
+      <section class="main-section" id="Difference_between_C_and_C++">
+        <header><h1>Difference between C and C++</h1></header>
+          <p><strong>C++</strong> was developed as an extension of <strong>C</strong>, and both languages have almost the same syntax.</p>
+          <p>The main differences between <strong>C</strong> and <strong>C++</strong> are that:</p>
+          <ol>
+            <li><p><strong>C++</strong> supports classes, which are a type of object that can be used to group data and methods. <strong>C</strong> does not support classes.</p></li>
+            <li><p><strong>C++</strong> supports inheritance, which allows one class to inherit the properties of another class. <strong>C</strong> does not support inheritance.</p></li>
+            <li><p><strong>C++</strong> supports polymorphism, which allows objects of different types to be treated similarly. <strong>C</strong> does not support polymorphism.</p></li>
+            <li><p><strong>C</strong> and <strong>C++</strong>, the code written by the programmer is transformed into machine code through a process called compilation. This process is handled by a program known as a <strong><code>compiler</code></strong>. The <strong><code>compiler</code></strong> takes the source code, analyses it, and then converts it into a machine-readable format, typically an executable file. This file can then be run directly on a computer's hardware.</p></li>
+            <li><p><strong>C++</strong> is a more complex language than <strong>C</strong>. This is because <strong>C++</strong> has more features, such as <strong><code>classes, inheritance,</code></strong> and <strong><code>polymorphism.</code></strong></p></li>
+          </ol>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header><h1>Hello world</h1></header>
+          <p>Let's break up the following code to understand it better:</p>
+          <div class="code">
+            <p><code>int main() {</code></p>
+            <p><code>cout << "Hello World!";</code></p>
+            <p><code>return 0;</code></p>
+            <p><code>}</code></p>
+          </div>
+          <p><strong>Line 1</strong>: A thing that always appear in a <strong>C++</strong> program is <strong><code class="variable">int main()</code></strong>. This is called a function. Any code inside its curly brackets "<strong><code class="variable">{}</code></strong>" will be executed.</p>
+          <p><strong>Line 2</strong>: <strong><code class="variable">cout</code></strong> (pronounced "see-out") is an object used together with the insertion operator (<strong><code class="variable"><<</code></strong>) to output/print text. In our example, it will output "<strong><code class="variable">Hello World!</code></strong>".</p> 
+          <p><strong>Line 3</strong>: <strong><code class="variable">return 0;</code></strong> ends the main function.</p>
+          <p><strong>Line 4</strong>: Do not forget to add the <strong>closing curly bracket</strong> (<strong><code class="variable">}</code></strong>) to actually end the main function.</p>
+          <p><strong>C++</strong> is <strong>case-sensitive</strong>. Meaning that "<strong><code class="variable">cout</code></strong>" and "<strong><code class="variable">Cout</code></strong>" has <strong>different meaning</strong> and that every <strong>C++</strong> statement <strong>ends with a semicolon</strong> "<strong><code class="variable">;</code></strong>".</p>
+          <p><strong>The body</strong> of <strong><code class="variable">int main()</code></strong> could also been written as: <strong><code class="variable">int main () { cout << "Hello World! "; return 0; }</code></strong></p>
+          <p><strong>Remember</strong>: The compiler <strong>ignores white spaces</strong>. However, <strong>multiple lines makes the code more readable</strong>.</p>
+          <p>
+      </section>
+      <section class="main-section" id="Variables">
+        <header><h1>Variables</h1></header>
+          <p>Variables are <strong>containers for storing data values</strong>.</p>
+          <p>In <strong>C++</strong>, there are <strong>different types of variables</strong> (defined with different keywords), for example:</p>
+          <ul>
+            <li><strong><code class="variable">int</code></strong>: stores integers (whole numbers), without decimals, such as <strong>123</strong> or <strong>-123</strong>.</li>
+            <li><strong><code class="variable">double</code></strong>: stores floating point numbers, with decimals, such as <strong>19.99</strong> or <strong>-19.99</strong>.</li>
+            <li><strong><code class="variable">char</code></strong>: stores single characters, such as <strong>'a'</strong> or <strong>'B'.</strong> Char values are <strong>surrounded by single quotes</strong>(' ').</li>
+            <li><strong><code class="variable">string</code></strong>: stores text, such as <strong>"Hello World"</strong>. String values are <strong>surrounded by double quotes</strong>(" ").</li>
+            <li><strong><code class="variable">bool</code></strong>: stores values with two states: <strong>true</strong> or <strong>false</strong>.</li>
+          </ul>
+          <p>To create a variable, <strong>specify the type and assign it a value</strong>:</p>
+          <div class="code">
+            <p><code>type variableName = value;</code></p>
+          </div>
+          <p>Where "<strong>type</strong>" is one of <strong> C++</strong> types (such as <strong><code class="variable">int</code></strong>), and "<strong>variableName</strong>" is the name of the variable (such as <strong><code class="variable">x</code></strong> or <strong><code class="variable">myName</code></strong>). The <strong>equal sign</strong> (<strong><code class="variable">=</code></strong>) is used to <strong>assign values to the variable</strong>.</p>      <p>To create a variable that should store a number, look at the following example:</p>
+          <div class="code">
+            <p><code>int myNum = 15;</p>
+            <p>cout << myNum;</code></p>
+          </div>
+          <section class="main-section" id="Reference">
+            <header><h1>Reference</h1></header>
+            <p>All the documentation in this page is taken from:</p>
+              <ul>
+                <li><a class="link" id="reference-link" href="https://www.shiksha.com/online-courses/articles/difference-between-c-and-cpp-programming-languages/#:~:text=The%20main%20difference%20between%20C,C%2B%2B%20are%20both%20compiled%20languages." target="_blank">Shiksha online (difference between C and C++)</a></li>
+                <li><a class="link" id="reference-link" href="https://www.w3schools.com/cpp/cpp_intro.asp" target="_blank">W3School (C++ introduction)</a></li>
+              </ul>
+          </section>
+      </section>
+    </main>
+  </body>
+</html>
