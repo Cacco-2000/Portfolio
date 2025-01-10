@@ -113,12 +113,18 @@ const translation =
         "certifications-timeline": "Timeline",
         "timeline-year": "Anno",
         "timeline-experience": "Esperienza",
-        "date-1": "Fine Settembre 2024:",
+        "date-1": "Settembre 2024:",
         "experience-1": `Ho iniziato il primo corso di carriera del sito <span>FreeCodeCamp</span> 
             (<span>Responsive Web Design</span>).`,
-        "date-2": "Inizio Novembre 2024:",
+        "date-2": "Novembre 2024:",
         "experience-2": `Ho ottenuto la mia prima <a href="https://www.freecodecamp.org/certification/Marco-C/responsive-web-design" 
             aria-label="Visita certificazione" target="_blank">certificazione</a> di HTML e CSS (<span>Responsive Web Design</span>).`,
+        "date-3": "Novembre 2024:",
+        "experience-3": `Ho iniziato il secondo corso di carriera del sito <span>FreeCodeCamp</span> 
+            (<span>Javascript Algorithms and data structures</span>).`,
+        "date-4": "Gennaio 2025:",
+        "experience-4": `Ho ottenuto la mia seconda <a href="https://www.freecodecamp.org/certification/Marco-C/javascript-algorithms-and-data-structures-v8" 
+            aria-label="Visita certificazione" target="_blank">certificazione</a> di javascript (<span>Javascript Algorithms and data structures</span>).`,
         "certification-link": "Certificazione",
         "portfolio-link": "Portfolio di FreeCodeCamp completo",
         "projects-title": "Progetti",
@@ -141,6 +147,8 @@ const translation =
         "project-link-8": "Visita il progetto",
         "project-9": "9: Cash Register",
         "project-link-9": "Visita il progetto",
+        "project-10": "10: Pokemon Search App",
+        "project-link-10": "Visita il progetto",
         "competents-title": "Competenze",
         "hobby-title": "Hobby",
         "hobby-1": "Leggere",
@@ -175,12 +183,18 @@ const translation =
         "certifications-timeline": "Timeline",
         "timeline-year": "Year",
         "timeline-experience": "Experience",
-        "date-1": "End of September 2024:",
+        "date-1": "September 2024:",
         "experience-1": `I started the first career course on the <span>FreeCodeCamp</span> 
             site (<span>Responsive Web Design</span>).`,
-        "date-2": "Early November 2024:",
+        "date-2": "November 2024:",
         "experience-2": `I obtained my first <a href="https://www.freecodecamp.org/certification/Marco-C/responsive-web-design" 
             aria-label="Visit Certification" target="_blank">certification</a> in HTML and CSS (<span>Responsive Web Design</span>).`,
+        "date-3": "November 2024:",
+        "experience-3": `I started the second career course on the <span>FreeCodeCamp</span> 
+            site (<span>Javascript Algorithms and data structures</span>).`,
+        "date-4": "January 2025:",
+        "experience-4": `I obtained my second <a href="https://www.freecodecamp.org/certification/Marco-C/javascript-algorithms-and-data-structures-v8" 
+            aria-label="Visit Certification" target="_blank">certification</a> in javascript (<span>Javascript Algorithms and data structures</span>).`,
         "certification-link": "Certification",
         "portfolio-link": "Complete FreeCodeCamp portfolio",
         "projects-title": "Projects",
@@ -203,6 +217,8 @@ const translation =
         "project-link-8": "Visit the project",
         "project-9": "9: Cash Register",
         "project-link-9": "Visit the project",
+        "project-10": "10: Pokemon Search App",
+        "project-link-10": "Visit the project",
         "competents-title": "Skills",
         "hobby-title": "Hobbies",
         "hobby-1": "Reading",

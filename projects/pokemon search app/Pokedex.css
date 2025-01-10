@@ -1,0 +1,299 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 
+{
+    margin: 0;
+    color: #333;
+}
+
+.search-section 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.search-section input 
+{
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+    border: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.search-section button 
+{
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: #3b4cca;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+
+.search-section button:hover 
+{
+    font-weight: bold;
+}
+
+
+@keyframes float 
+{
+    0%, 100% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-2px);
+    }
+}
+
+
+.search-section button:hover 
+{
+    animation: float 0.6s ease-in-out infinite;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+.search-section input,
+.search-section button 
+{
+    transition:  box-shadow 0.5s;
+}
+
+#pokemon-info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.pokemon-suggestions 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pokemon-card 
+{
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pokemon-card img 
+{
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    transition: transform 0.2s;
+}
+
+.pokemon-card a
+{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #3b4cca;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pokemon-card a:hover 
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pokemon-card img:hover
+{
+    border-color: #ffcb05;
+    transform: scale(1.05);
+}
+
+
+.pokemon-images 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.pokemon-images img 
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.pokemon-base-stats 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.pokemon-stats 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.pokemon-stats p 
+{
+    color: #3b4cca;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+    
+}
+
+.loading-spinner 
+{
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #007BFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin 
+{
+    from 
+    {
+        transform: rotate(0deg);
+    }
+    to 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 1200px) 
+{
+    .search-section input 
+    {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .search-section button 
+    {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    .pokemon-images img 
+    {
+        width: 200px;
+        height: 200px;
+    }
+
+    .pokemon-stats p 
+    {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+
+
+@media (max-width: 768px) 
+{
+    .search-section 
+    {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-section input 
+    {
+        width: 100%;
+    }
+
+    .search-section button 
+    {
+        width: 100%;
+    }
+
+    .pokemon-images img 
+    {
+        width: 120px;
+        height: 120px;
+    }
+
+    .pokemon-stats 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 480px) 
+{
+    header h1 
+    {
+        font-size: 20px;
+    }
+
+    .search-section input 
+    {
+        font-size: 14px;
+    }
+
+    .search-section button 
+    {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .pokemon-images img 
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .pokemon-stats p 
+    {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
