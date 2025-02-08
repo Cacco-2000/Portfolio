@@ -10,7 +10,8 @@ const originalTexts =
 {
     "filtro-html-css": "HTML/CSS",
     "filtro-html-css-js": "HTML/CSS/JavaScript",
-    "filtro-tutti": "Mostra Tutti"
+    "filtro-tutti": "Mostra tutti",
+    "all-filter": "Show all"
 };
 
 
@@ -52,15 +53,29 @@ const resetButtonTexts = () =>
 {
     btnHtmlCss.textContent = originalTexts["filtro-html-css"];
     btnHtmlCssJs.textContent = originalTexts["filtro-html-css-js"];
-    btnTutti.textContent = originalTexts["filtro-tutti"];
+    if(currentLang === "it")
+    {
+        btnTutti.textContent = originalTexts["filtro-tutti"];
+    }
+    else if(currentLang === "en")
+    {
+        btnTutti.textContent = originalTexts["all-filter"];
+    }
 };
 
 const handleButtonClick = (button, tag) => 
 {
-    if (button.textContent !== 'Rimuovi') 
+    if (button.textContent !== 'Rimuovi' && button.textContent !== 'Remove') 
     {
         resetButtonTexts();
-        button.textContent = 'Rimuovi';
+        if(currentLang === "it")
+        {
+            button.textContent = 'Rimuovi';
+        }
+        else if(currentLang === "en")
+        {
+            button.textContent = 'Remove';
+        }
         filtraProgetti(tag);
     } 
     else 
@@ -90,7 +105,9 @@ const form = document.getElementById("contact-form");
         form.reset();
     });
 
-
+/* Cambio Lingua */
+const cambiaLinguaBtn = document.getElementById("cambia-lingua");
+let currentLang = "it";
 
 /* Traduzioni */
 const translation = 
@@ -113,18 +130,15 @@ const translation =
         "certifications-timeline": "Timeline",
         "timeline-year": "Anno",
         "timeline-experience": "Esperienza",
-        "date-1": "Settembre 2024:",
-        "experience-1": `Ho iniziato il primo corso di carriera del sito <span>FreeCodeCamp</span> 
-            (<span>Responsive Web Design</span>).`,
-        "date-2": "Novembre 2024:",
-        "experience-2": `Ho ottenuto la mia prima <a href="https://www.freecodecamp.org/certification/Marco-C/responsive-web-design" 
-            aria-label="Visita certificazione" target="_blank">certificazione</a> di HTML e CSS (<span>Responsive Web Design</span>).`,
-        "date-3": "Novembre 2024:",
-        "experience-3": `Ho iniziato il secondo corso di carriera del sito <span>FreeCodeCamp</span> 
-            (<span>Javascript Algorithms and data structures</span>).`,
-        "date-4": "Gennaio 2025:",
-        "experience-4": `Ho ottenuto la mia seconda <a href="https://www.freecodecamp.org/certification/Marco-C/javascript-algorithms-and-data-structures-v8" 
-            aria-label="Visita certificazione" target="_blank">certificazione</a> di javascript (<span>Javascript Algorithms and data structures</span>).`,
+        "date-1": "Novembre 2024:",
+        "experience-1": `Ho ottenuto la mia prima <a href="https://www.freecodecamp.org/certification/Marco-C/responsive-web-design" 
+            aria-label="Visita certificazione" target="_blank">certificazione</a> di FreeCodeCamp relativa a HTML e CSS (<span>Responsive Web Design</span>).`,
+        "date-2": "Gennaio 2025:",
+        "experience-2": `Ho ottenuto la mia seconda <a href="https://www.freecodecamp.org/certification/Marco-C/javascript-algorithms-and-data-structures-v8" 
+            aria-label="Visita certificazione" target="_blank">certificazione</a> di FreeCodeCamp relativa a Javascript (<span>Javascript Algorithms and data structures</span>).`,
+        "date-3":"Febbraio 2025:",
+        "experience-3": `Ho ottenuto la mia terza <a href="https://www.freecodecamp.org/certification/Marco-C/front-end-development-libraries" 
+            aria-label="Visita certificazione" target="_blank">certificazione</a> di FreeCodeCamp relativa alle librerie Front End (<span>Front End Development Libraries</span>).`,
         "certification-link": "Certificazione",
         "portfolio-link": "Portfolio di FreeCodeCamp completo",
         "projects-title": "Progetti",
@@ -183,18 +197,15 @@ const translation =
         "certifications-timeline": "Timeline",
         "timeline-year": "Year",
         "timeline-experience": "Experience",
-        "date-1": "September 2024:",
-        "experience-1": `I started the first career course on the <span>FreeCodeCamp</span> 
-            site (<span>Responsive Web Design</span>).`,
-        "date-2": "November 2024:",
-        "experience-2": `I obtained my first <a href="https://www.freecodecamp.org/certification/Marco-C/responsive-web-design" 
-            aria-label="Visit Certification" target="_blank">certification</a> in HTML and CSS (<span>Responsive Web Design</span>).`,
-        "date-3": "November 2024:",
-        "experience-3": `I started the second career course on the <span>FreeCodeCamp</span> 
-            site (<span>Javascript Algorithms and data structures</span>).`,
-        "date-4": "January 2025:",
-        "experience-4": `I obtained my second <a href="https://www.freecodecamp.org/certification/Marco-C/javascript-algorithms-and-data-structures-v8" 
-            aria-label="Visit Certification" target="_blank">certification</a> in javascript (<span>Javascript Algorithms and data structures</span>).`,
+        "date-1": "November 2024:",
+        "experience-1": `I obtained my first <a href="https://www.freecodecamp.org/certification/Marco-C/responsive-web-design" 
+            aria-label="Visit Certification" target="_blank">certification</a> of FreeCodeCamp about learning HTML and CSS (<span>Responsive Web Design</span>).`,
+        "date-2": "January 2025:",
+        "experience-2": `I obtained my second <a href="https://www.freecodecamp.org/certification/Marco-C/javascript-algorithms-and-data-structures-v8" 
+            aria-label="Visit Certification" target="_blank">certification</a> of FreeCodeCamp about learning Javascript (<span>Javascript Algorithms and data structures</span>).`,
+        "date-3":"February 2025:",
+        "experience-3": `I obtained my third <a href="https://www.freecodecamp.org/certification/Marco-C/front-end-development-libraries" 
+            aria-label="Visita certificazione" target="_blank">certification</a> of FreeCodeCamp about learning Front End Libraries (<span>Front End Development Libraries</span>).`,
         "certification-link": "Certification",
         "portfolio-link": "Complete FreeCodeCamp portfolio",
         "projects-title": "Projects",
@@ -236,12 +247,6 @@ const translation =
         "submit": "Send"
     }
 };
-
-
-
-/* Cambio Lingua */
-const cambiaLinguaBtn = document.getElementById("cambia-lingua");
-let currentLang = "it";
 
 
 const cambiaLingua = (lingua) => 
