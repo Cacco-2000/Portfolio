@@ -1,0 +1,218 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#top-container
+{
+    background-color: #F1E3D3;
+    padding-top: 46px;
+    text-align: center;
+    margin: 0px;
+    position: relative;
+}
+
+h1
+{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic; 
+    color: #690B22;
+    font-size: 3rem;
+}
+
+h2
+{
+    font-family: "Libre Baskerville", serif;
+    color: #690B22;
+    font-size: 2rem;
+}
+
+h3
+{
+    font-family: "Libre Baskerville", serif;
+    color: #1B4D3E;
+}
+
+p
+{
+    font-family: "Libre Baskerville", serif;
+    color: #690B22;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#top-container h1, #top-container h2
+{
+    margin-bottom: 20px;
+}
+
+#title-container
+{
+    display: inline;
+}
+
+
+img
+{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    object-fit: cover;
+}
+
+#sun
+{
+    position: absolute;
+    bottom: 350px;
+    right: 0px;
+    height: 150px;
+}
+
+#moon
+{
+    position: absolute;
+    left: 0px;
+    bottom:350px;
+    height: 100px;
+}
+
+#tree
+{
+    height: 500px;
+}
+
+#middle-container
+{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: 0px;
+    background-color: #E07A5F;
+}
+
+#image img
+{
+    border: 2px solid #690B22;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+}
+
+#image img:hover
+{
+    border: 8px solid #1B4D3E;;
+}
+
+#middle-container h2
+{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#middle-container p
+{
+    margin-bottom: 20px; 
+}
+
+
+#skills-container
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#skills-container a
+{
+    color:#1B4D3E;
+    text-decoration: none;
+}
+
+#skills-container a:hover
+{
+    text-decoration: underline;
+}
+
+#skills-container h3
+{
+    margin-bottom: 10px;
+    text-decoration: underline;
+    
+}
+
+
+#skills-container p
+{
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+#skills-container hr
+{
+   border: 2px solid #690B22;
+   margin-top: 50px;
+}
+
+.btn
+{
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    background: #F1E3D3;
+    color: #1B4D3E;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+#bottom-container
+{
+    text-align: center;
+    margin: 0px;
+    background-color: #690B22;
+    padding: 50px 0 20px;
+}
+
+
+#bottom-container a
+{
+    color: #F1E3D3;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#bottom-container a:hover
+{
+    text-decoration: underline;
+}
+
+#bottom-container p
+{
+    color: #F1E3D3;
+    font-size: 1rem;
+}
+
+#contact-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
