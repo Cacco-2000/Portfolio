@@ -163,7 +163,7 @@ const translation =
         "project-link-9": "Visita il progetto",
         "project-10": "Pokemon Search App",
         "project-link-10": "Visita il progetto",
-        "project-11": "Pokemon Page",
+        "project-11": "Personal Page",
         "project-link-11": "Visita il progetto",
         "competents-title": "Competenze",
         "hobby-title": "Hobby",
